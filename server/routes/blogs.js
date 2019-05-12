@@ -4,7 +4,6 @@ const Blog = require('../models/Blog');
 const User = require('../models/User');
 
 router.get('/', (req, res) => {
-  console.log('before router.get / find')
   Blog
     .find()
     .then(users => {
@@ -26,7 +25,6 @@ router.get('/featured', (req, res) => {
 
 router.get('/:id', (req, res) => {
   const id = req.params.id;
-  console.log(`blog id is ${id}`);
   Blog
     .findById(id)
     .then(blogByID => {

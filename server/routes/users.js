@@ -3,7 +3,6 @@ const router = express.Router();
 const User = require('../models/User');
 
 router.get('/', (req, res) => {
-  console.log('before router.get / find')
   User
     .find()
     .then(users => {
@@ -13,7 +12,6 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
   const id = req.params.id;
-  console.log(`user id is ${id}`);
   User
     .findById(id)
     .then(userById => {
