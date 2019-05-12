@@ -42,4 +42,4 @@ $ npm test
 ```
 
 ## Deployment
-Deployed through Heroku [here](https://ae-node200-mongoose-blog-api.herokuapp.com)
+Deployed through Heroku [here](xxx)
