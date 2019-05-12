@@ -4,7 +4,10 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 require('dotenv').config();
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+const MONGODB_URI = process.env.MONGODB_URI
+console.log(MONGODB_URI)
+
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 mongoose.Promise = Promise;
 
 const app = express();
