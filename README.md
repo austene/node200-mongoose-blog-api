@@ -33,9 +33,13 @@ npm start
 ```
 
 ## Test
+* Run MongoDB in the background
+```
+mongod
+```
 ```
 $ npm test
 ```
 
 ## Deployment
-Deployed through Heroku [Go to Heroku URL](xxx)
+Deployed through Heroku [here](https://ae-node200-mongoose-blog-api.herokuapp.com)
